@@ -23,7 +23,9 @@ export default function TextEditor() {
   const [quill, setQuill] = useState()
 
   useEffect(() => {
-    const s = io("http://localhost:3001")
+    // const s = io("http://localhost:3001")
+    const s = io("https://mydocs-wqfg.onrender.com")
+
     setSocket(s)
 
     return () => {
